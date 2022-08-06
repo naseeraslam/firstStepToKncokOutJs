@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+
+<!--
+  ~ /*
+  ~  * Copyright (c) 2022.
+  ~  * Code by MUHAMMAD NASEER ASLAM.
+  ~  * You are not allowed to replicate my code as extension without permission.
+  ~  * If you need further help contact me on naseeraslamkhan016@gmail.com
+  ~  */
+  -->
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:App/etc/routes.xsd">
+    <router id="standard">
+        <route id="practice" frontName="practice">
+            <module name="PHPStudios_KnockoutPractice"/>
+        </route>
+    </router>
+</config>

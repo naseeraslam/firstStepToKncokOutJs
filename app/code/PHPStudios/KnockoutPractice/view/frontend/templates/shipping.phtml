@@ -1,0 +1,28 @@
+<?php
+/*
+ *
+ *  * Copyright (c) 2022.
+ *  * Code by MUHAMMAD NASEER ASLAM.
+ *  * You are not allowed to replicate my code as extension without permission.
+ *  * If you need further help contact me on naseeraslamkhan016@gmail.com
+ *
+ */
+
+/** @var $block Magento\Framework\View\Element\Template */
+?>
+<div id="shipping-plan"">
+    <div id="sku-lookup" data-bind="scope: 'skuLookup'">
+        <!-- ko template: getTemplate()   --><!-- /ko -->
+    </div>
+  <!-- scope name is component name which is written its view related xml file -->
+   <div id="box-configurations" data-bind="scope: 'boxConfigurations'">
+      <!-- ko template: getTemplate()   --><!-- /ko -->
+   </div>
+</div>
+<script type="text/x-magento-init">
+{
+    "#shipping-plan":{
+          "Magento_Ui/js/core/app":<?= $block->getJsLayout() ?>
+    }
+}
+</script>

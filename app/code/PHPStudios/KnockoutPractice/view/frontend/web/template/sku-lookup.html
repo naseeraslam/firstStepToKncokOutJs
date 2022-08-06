@@ -1,0 +1,22 @@
+ <!--
+  ~ /*
+  ~  * Copyright (c) 2022.
+  ~  * Code by MUHAMMAD NASEER ASLAM.
+  ~  * You are not allowed to replicate my code as extension without permission.
+  ~  * If you need further help contact me on naseeraslamkhan016@gmail.com
+  ~  */
+  -->
+
+<div class="sku-lookup">
+    <h2><!-- ko i18n: 'SKU Lookup' --><!-- /ko --></h2>
+    <h2 data-bind="i18n:'SKU Lookup'"></h2>
+    <!-- Both are alternate of each other -->
+    <h3><translate args="'Naseer is Here'"/></h3>
+    <form data-bind="click: handleSubmit">
+        <input id="sku" class="sku" name="sku" type="text" data-bind="value:sku,attr:{placeholder: placeholder}"/>
+        <button type="submit" class="sku-button" >Confirm Sku</button>
+        <div data-bind="html: messageResponse,style:{color:isSuccess() ? 'green' : 'red'}">
+        </div>
+    </form>
+</div>
+
