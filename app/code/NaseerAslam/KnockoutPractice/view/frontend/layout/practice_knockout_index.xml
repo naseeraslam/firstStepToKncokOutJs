@@ -12,28 +12,28 @@
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column"
       xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <referenceContainer name="content">
-        <block name="shipping_plan" template="PHPStudios_KnockoutPractice::shipping.phtml">
+        <block name="shipping_plan" template="NaseerAslam_KnockoutPractice::shipping.phtml">
             <arguments>
                 <argument name="jsLayout" xsi:type="array">
                     <item name="components" xsi:type="array">
                         <item name="skuLookup" xsi:type="array">
                             <item name="component" xsi:type="string">
-                                PHPStudios_KnockoutPractice/js/sku-lookup
+                                NaseerAslam_KnockoutPractice/js/sku-lookup
                             </item>
                             <item name="config" xsi:type="array">
                                 <item name="template" xsi:type="string">
-                                    PHPStudios_KnockoutPractice/sku-lookup
+                                    NaseerAslam_KnockoutPractice/sku-lookup
                                 </item>
                             </item>
                         </item>
                         <!--- multiple knockout components in a single view file -->
                         <item name="boxConfigurations" xsi:type="array">
                             <item name="component" xsi:type="string">
-                                PHPStudios_KnockoutPractice/js/box-configurations
+                                NaseerAslam_KnockoutPractice/js/box-configurations
                             </item>
                             <item name="config" xsi:type="array">
                                 <item name="template" xsi:type="string">
-                                    PHPStudios_KnockoutPractice/box-configurations
+                                    NaseerAslam_KnockoutPractice/box-configurations
                                 </item>
                             </item>
                         </item>

@@ -27,7 +27,7 @@ define(
         return Component.extend({
             defaults:{
                 // Best approach to write in xml file so easy override
-                // template: 'PHPStudios_KnockoutPractice/sku-lookup',
+                // template: 'NaseerAslam_KnockoutPractice/sku-lookup',
                 sku: ko.observable('24-MB01'),
                 placeholder: $t('Example: %1').replace('%1','24-MB01'),
                 messageResponse: ko.observable(''),

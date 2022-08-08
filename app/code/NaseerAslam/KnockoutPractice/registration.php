@@ -10,6 +10,6 @@
 
 \Magento\Framework\Component\ComponentRegistrar::register(
     \Magento\Framework\Component\ComponentRegistrar::MODULE,
-    'PHPStudios_KnockoutPractice',
+    'NaseerAslam_KnockoutPractice',
     __DIR__
 );

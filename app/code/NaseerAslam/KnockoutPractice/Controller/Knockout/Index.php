@@ -8,7 +8,7 @@
  *
  */
 
-namespace PHPStudios\KnockoutPractice\Controller\Knockout;
+namespace NaseerAslam\KnockoutPractice\Controller\Knockout;
 
 use Magento\Framework\App\Action\Context;
 use Magento\Framework\View\Result\PageFactory;
@@ -16,7 +16,7 @@ use Magento\Framework\App\Action\Action;
 
 /**
  * Class Index
- * @package PHPStudios\KnockoutPractice\Controller\Knockout\Index
+ * @package NaseerAslam\KnockoutPractice\Controller\Knockout\Index
  */
 class Index extends Action
 {

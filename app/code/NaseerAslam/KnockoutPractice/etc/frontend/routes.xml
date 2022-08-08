@@ -13,7 +13,7 @@
         xsi:noNamespaceSchemaLocation="urn:magento:framework:App/etc/routes.xsd">
     <router id="standard">
         <route id="practice" frontName="practice">
-            <module name="PHPStudios_KnockoutPractice"/>
+            <module name="NaseerAslam_KnockoutPractice"/>
         </route>
     </router>
 </config>
