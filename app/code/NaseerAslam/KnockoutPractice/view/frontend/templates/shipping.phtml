@@ -3,7 +3,6 @@
  *
  *  * Copyright (c) 2022.
  *  * Code by MUHAMMAD NASEER ASLAM.
-*  * If you need further help contact me on naseeraslamkhan016@gmail.com
  *
  */
 
