@@ -22,7 +22,17 @@ define(
             defaults:{
                 // Best approach to write in xml file so easy override
                 // template: 'NaseerAslam_KnockoutPractice/sku-lookup'
-                boxConfigurations: ko.observableArray(['abc','def '])
+                boxConfigurations: ko.observableArray(['abc','def ']),
+                //Lets play with multi dimensional array
+                boxMultiDimensional: ko.observableArray([{
+                    length: 10,
+                    width: 20,
+                    height: 23
+                },{
+                    length: 11,
+                    width: 21,
+                    height: 24
+                }])
             },
             initialize(){
                 this._super();

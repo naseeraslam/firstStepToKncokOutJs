@@ -30,5 +30,15 @@
             <!-- ko text: $data --><!-- /ko -->
         </div>
     <!-- /ko -->
+    <h3>Multi Dimensional Observeable array</h3>
+    <!-- ko foreach: boxMultiDimensional -->
+    <div>
+        <!-- ko i18n: 'Box' --><!-- /ko -->
+        <!-- ko text: $index()+1 --><!-- /ko -->:
+        <span data-bind="text: length"></span>
+        <span data-bind="text: width"></span>
+        <span data-bind="text: height"></span>
+    </div>
+    <!-- /ko -->
 </div>
 
