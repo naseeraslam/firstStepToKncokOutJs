@@ -21,12 +21,12 @@
     <!-- Alternate of it with virtual element -->
 
     <h3>Virtual element practice</h3>
-    <!-- ko foreach: boxConfigurations -->
+    <div data-bind="foreach: { data: boxMultiDimensional, as: 'boxMD' }">
         <div>
             <!-- ko i18n: 'Configuration' --><!-- /ko -->
             <!-- ko text: $index()+1 --><!-- /ko -->:
-            <!-- ko text: $data --><!-- /ko -->
+            <span data-bind=" text: ko.toJSON(boxMD)"></span>
         </div>
-    <!-- /ko -->
+    </div>
 </div>
 
