@@ -27,7 +27,8 @@ define(
                 // Best approach to write in xml file so easy override
                 // template: 'NaseerAslam_KnockoutPractice/sku-lookup'
                 boxConfigurations: ko.observableArray(['abc','def ']),
-                boxConfigurationModel: boxConfigurationModel
+                boxConfigurationModel: boxConfigurationModel,
+                boxMultiDimensional: boxConfigurationModel.boxMultiDimensional
             },
             initialize(){
                 this._super();
