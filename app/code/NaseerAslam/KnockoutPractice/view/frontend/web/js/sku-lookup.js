@@ -12,24 +12,26 @@ define(
         'ko',
         'mage/storage',
         'jquery',
-        'mage/translate'
+        'mage/translate',
+        'NaseerAslam_KnockoutPractice/js/model/sku'
     ],
     function (
         Component,
         ko,
         storage,
         $,
-        $t
+        $t,
+        skuModel
     ) {
         'use strict';
         return Component.extend({
             defaults:{
                 // Best approach to write in xml file so easy override
                 // template: 'NaseerAslam_KnockoutPractice/sku-lookup',
-                sku: ko.observable('24-MB01'),
+                sku: skuModel.sku,
                 placeholder: $t('Example: %1').replace('%1','24-MB01'),
                 messageResponse: ko.observable(''),
-                isSuccess: ko.observable(false)
+                isSuccess: skuModel.isSuccess
             },
             initialize(){
                 this._super();

@@ -7,7 +7,7 @@
 
 <div class="box-configurations">
     <h2 data-bind="i18n:'Box Configurations'"></h2>
-    <ul data-bind="foreach: boxConfigurations">
+    <ul data-bind="foreach: boxConfigurationModel.boxConfigurations">
         <li>
             <!-- ko i18n: 'Configuration' --><!-- /ko -->
             <!-- ko text: $index()+1 --><!-- /ko -->:
@@ -31,7 +31,7 @@
                     <th></th>
                 </tr>
             </thead>
-            <tbody data-bind="foreach: boxMultiDimensional ">
+            <tbody data-bind="foreach: boxConfigurationModel.boxMultiDimensional ">
                 <tr>
                     <td>
                        <input name="units_per_box" type="number" data-bind="textInput: unitsPerBox "/>
