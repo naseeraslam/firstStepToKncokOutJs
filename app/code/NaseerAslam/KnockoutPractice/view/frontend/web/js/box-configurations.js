@@ -10,12 +10,14 @@ define(
     [
         'uiComponent',
         'ko',
-        'NaseerAslam_KnockoutPractice/js/model/box-configuration'
+        'NaseerAslam_KnockoutPractice/js/model/box-configuration',
+        'NaseerAslam_KnockoutPractice/js/model/sku'
     ],
     function (
         Component,
         ko,
-        boxConfigurationModel
+        boxConfigurationModel,
+        skuModel
     ) {
         'use strict';
 
@@ -30,6 +32,12 @@ define(
             initialize(){
                 this._super();
                 console.log('Woww its great to practice');
+                skuModel.isSuccess.subscribe( (value) => {
+                 console.log('Sku isSuccess new value ',value);
+                }),
+                skuModel.isSuccess.subscribe( (value) => {
+                    console.log('Sku isSuccess old value ',value);
+                },null,'beforeChange')
             },
             addnewRow(){
                 boxConfigurationModel.add();
