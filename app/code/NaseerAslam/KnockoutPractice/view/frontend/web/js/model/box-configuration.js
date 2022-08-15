@@ -20,7 +20,8 @@ define(
         'use strict';
 
         const boxMultiDimensional = ()=> {
-            return {
+            const divisor = 139;
+            const data = {
                 length: ko.observable(),
                 width: ko.observable(),
                 height: ko.observable(),
@@ -28,6 +29,11 @@ define(
                 unitsPerBox: ko.observable(),
                 numberOfBoxes: ko.observable(),
             };
+            data.dimensionalWeight = ko.computed( () => {
+              const result = data.length() * data.height() * data.width()/divisor;
+              return Math.round(result * data.numberOfBoxes());
+            });
+            return data;
         };
 
         return {
