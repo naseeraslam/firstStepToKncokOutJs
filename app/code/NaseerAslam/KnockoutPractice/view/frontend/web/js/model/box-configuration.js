@@ -39,6 +39,7 @@ define(
 
         return {
                 boxMultiDimensional: ko.observableArray([boxMultiDimensional()]),
+                isSuccess: ko.observable(false),
                 add: function (){
                     this.boxMultiDimensional.push(boxMultiDimensional())
                 },
