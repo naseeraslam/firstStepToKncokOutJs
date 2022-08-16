@@ -11,13 +11,15 @@ define(
         'uiComponent',
         'ko',
         'NaseerAslam_KnockoutPractice/js/model/box-configuration',
-        'NaseerAslam_KnockoutPractice/js/model/sku'
+        'NaseerAslam_KnockoutPractice/js/model/sku',
+        'jquery'
     ],
     function (
         Component,
         ko,
         boxConfigurationModel,
-        skuModel
+        skuModel,
+        $
     ) {
         'use strict';
 
@@ -47,7 +49,12 @@ define(
                 boxConfigurationModel.delete(index);
             },
             handleSubmit(){
-                console.log('Submitted sucessfully');
+                if($('.box-configurations form').valid()){
+                    boxConfigurationModel.isSuccess(true);
+                }
+                else {
+                    boxConfigurationModel.isSuccess(true);
+                }
             }
         });
     }
